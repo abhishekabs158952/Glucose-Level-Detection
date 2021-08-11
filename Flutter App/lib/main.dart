@@ -215,7 +215,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Dio dio = new Dio(options);
 
     Response response = await dio.post(
-      "https://iotflaskapicloud.el.r.appspot.com/file-upload",
+      "base_url(rest api url generated when uploaded to cloud)/file-upload",
       data: formData,
       onSendProgress: (int sent, int total) {
         print("$sent $total");
